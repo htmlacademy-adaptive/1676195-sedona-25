@@ -1,0 +1,220 @@
+Index: source/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/index.html	(date 1649178309000)
++++ source/index.html	(date 1649243185889)
+@@ -6,41 +6,31 @@
+   </head>
+   <body class="page__body">
+     <header class="main-header">
+-      <a class="main-header__logo">
+-        <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
+-      </a>
+-        <nav class="main-nav">
+-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
+-          <div class="main-nav_wrapper">
+-            <ul class="main-nav__list site-list">
+-                <li class="site-list__item site-list__item--active">
+-                    <a>
+-                      Главная
+-                    </a>
+-                </li>
+-                <li class="site-list__item>
+-                    <a href="#">
+-                      Фото и видео
+-                    </a>
+-                </li>
+-                <li class="site-list__item>
+-                    <a href="#">
+-                      Форма отзыва
+-                    </a>
+-                </li>
+-                <li class="site-list__item>
+-                    <a href="#">
+-                      HTML academy
+-                    </a>
+-                </li>
+-
+-            </ul>
+-            <div class="main-nav__list user-list">
+-            </div>
+-
+-          </div>
+-        </nav>
+-    </header>
++    <a class="main-header__logo">
++      <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
++    </a>
++    <nav class="main-nav">
++      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
++      <div class="main-nav_wrapper">
++        <ul class="main-nav__list site-list">
++          <li class="site-list__item site-list__item--active">
++            <a>Главная</a>
++          </li>
++          <li class="site-list__item">
++          <a href="#">Фото и видео</a>
++          </li>
++          <li class="site-list__item">
++          <a href="#">Форма отзыва</a>
++          </li>
++          <li class="site-list__item">
++          <a href="#">HTML academy</a>
++          </li>
++        </ul>
++        <div class="main-nav__list user-list">
++        </div>
++      </div>
++    </nav>
++  </header>
+     <main class="main-container">
+       <section class="welcom-block">
+       <img class="welcome-block__main-image" src="">
+Index: source/form.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/form.html	(date 1649178309000)
++++ source/form.html	(date 1649243294730)
+@@ -10,34 +10,24 @@
+     <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
+   </a>
+   <nav class="main-nav">
+-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
++    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+     <div class="main-nav_wrapper">
+       <ul class="main-nav__list site-list">
+         <li class="site-list__item site-list__item--active">
+-          <a>
+-            Главная
+-          </a>
++          <a>Главная</a>
+         </li>
+-        <li class="site-list__item>
+-                    <a href="#">
+-        Фото и видео
+-        </a>
++        <li class="site-list__item">
++          <a href="#">Фото и видео</a>
+         </li>
+-        <li class="site-list__item>
+-                    <a href="#">
+-        Форма отзыва
+-        </a>
++        <li class="site-list__item">
++          <a href="#">Форма отзыва</a>
+         </li>
+-        <li class="site-list__item>
+-                    <a href="#">
+-        HTML academy
+-        </a>
++        <li class="site-list__item">
++          <a href="#">HTML academy</a>
+         </li>
+-
+       </ul>
+       <div class="main-nav__list user-list">
+       </div>
+-
+     </div>
+   </nav>
+ </header>
+@@ -124,7 +114,7 @@
+               <button class="button feedback-forms" type="button"><span class="visually-hidden">Отправить отзыв</span></button>
+                 <p class="form__notice">* — обязательные поля</p>
+               </fieldset>
+-            </div>
++            </div>npm test
+           </section>
+           </section>
+     </main>
+Index: source/catalog.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- source/catalog.html	(date 1649178309000)
++++ source/catalog.html	(date 1649243418753)
+@@ -5,44 +5,33 @@
+   <title>HTML Academy: Седона</title>
+ </head>
+ <body class="page__body">
+-<header class="main-header">
++  <header class="main-header">
+   <a class="main-header__logo">
+     <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
+   </a>
+   <nav class="main-nav">
+-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</button>
++    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+     <div class="main-nav_wrapper">
+       <ul class="main-nav__list site-list">
+         <li class="site-list__item site-list__item--active">
+-          <a>
+-            Главная
+-          </a>
++          <a>Главная</a>
+         </li>
+-        <li class="site-list__item>
+-                    <a href="#">
+-        </a>
+-        Фото и видео
+-        </a>
++        <li class="site-list__item">
++          <a href="#">Фото и видео</a>
+         </li>
+-        <li class="site-list__item>
+-                    <a href="#">
+-        Форма отзыва
+-        </a>
++        <li class="site-list__item">
++          <a href="#">Форма отзыва</a>
+         </li>
+-        <li class="site-list__item>
+-        <a href="#">
+-        HTML academy
+-        </a>
++        <li class="site-list__item">
++          <a href="#">HTML academy</a>
+         </li>
+-
+       </ul>
+       <div class="main-nav__list user-list">
+       </div>
+-
+     </div>
+   </nav>
+ </header>
+-<main class="main-container">
++  <main class="main-container">
+   <section class="welcom-block">
+     <img class="welcome-block__main-image" src="">
+   </section>
+@@ -148,7 +137,7 @@
+           </div>
+         </section>>
+       </article>
+-<footer class="footer footer-catalog">
++  <footer class="footer footer-catalog">
+   <span class="tag-item">#VISITSEDONA</span>
+   <ul class="social__list footer-index">
+     <li><a href="" class="buttin-VK">VK</a></li>
+@@ -161,6 +150,7 @@
+       <img class="footer-index__developer-image" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true">
+     </a>
+   </div>
+-</footer>
++  </footer>
++  </main>>
+ </body>
+ </html>
+diff --git source/img/Polygon 1.png source/img/Polygon 1.png
+deleted file mode 100644
+index bce50d9d22e122d91abcc7d77c7cd9a611c00b7c..0000000000000000000000000000000000000000
+GIT binary patch
+literal 0
+Hc$@<O00001
+
