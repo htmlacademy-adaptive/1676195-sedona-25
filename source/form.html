@@ -32,15 +32,15 @@
   </nav>
 </header>
     <main class="main-container">
-        <section class="welcom-block">
-            <img class="welcome-block__main-image" src="">
-        </section>
+        <div class="welcom-block">
+          <img class="welcome-block__main-image" src="img/pic.png" alt="заставка">
+        </div>
         <section class="feedback">
-          <section class="feedback-header">
+          <div class="feedback-header">
             <h1 class="advantage__title"> ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
             <p class="main-article__text"> ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ.</p>
-          </section>
-          <section class="feedback-forms" action="https://echo.htmlacademy.ru" method="post">
+          </div>
+          <form class="feedback-forms" action="https://echo.htmlacademy.ru">
             <div class="form-container form-container--impressions">
               <fieldset class="form__fieldset">
                 <legend class="legend-form__impressions">
@@ -60,13 +60,13 @@
                   ПРЕДСТАВЬТЕСЬ:
                 </legend>
                   <p class="form__group form__group--name">
-                    <label class="form__label" for="first-name">Имя*:</label>
+                    <label class="form__label">Имя*:</label>
                     <input class="form__input" type="text" name="first-name" placeholder="Имя" value="Петр" required=""> </p>
                   <p class="form__group form__group--name">
-                    <label class="form__label" for="last-name">Фамилия*:</label>
+                    <label class="form__label">Фамилия*:</label>
                     <input class="form__input" type="text" name="first-name" placeholder="Фамилия" value="Тюкавкин" required=""> </p>
                   <p class="form__group form__group--name">
-                    <label class="form__label" for="middle-name">Отчество*:</label>
+                    <label class="form__label">Отчество*:</label>
                     <input class="form__input" type="text" name="first-name" placeholder="Отчество" value="Петрович" required=""> </p>
               </fieldset>
             </div>
@@ -76,10 +76,10 @@
                 КОНТАКТНАЯ ИНФОРМАЦИЯ:
               </legend>
                 <p class="form__group form__group--name">
-                  <label class="form__label" for="last-name">Контактный телефон*:</label>
+                  <label class="form__label">Контактный телефон*:</label>
                   <input class="form__input" type="text" name="first-name" placeholder="Телефон" value="Введите телефон" required=""> </p>
                 <p class="form__group form__group--name">
-                  <label class="form__label" for="middle-name">Электронная почта*:</label>
+                  <label class="form__label">Электронная почта*:</label>
                   <input class="form__input" type="text" name="first-name" placeholder="e-mail" value="Введите e-mail" required=""> </p>
               </fieldset>
 
@@ -115,8 +115,8 @@
                 <p class="form__notice">* — обязательные поля</p>
               </fieldset>
             </div>npm test
-          </section>
-          </section>
+          </form>
+        </section>
     </main>
     <footer class="footer footer-emotion">
       <span class="tag-item">#VISITSEDONA</span>
@@ -128,7 +128,7 @@
       <div class="developer-item">
         <a href="https://htmlacademy.ru/">
           <span>Разработано</span>
-          <img class="footer-index__developer-image" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true">
+          <img class="footer-index__developer-image" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true" alt="logo academy">
         </a>
       </div>
     </footer>
