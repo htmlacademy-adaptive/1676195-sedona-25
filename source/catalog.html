@@ -2,161 +2,139 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>Sedona - главная страница</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="page__body">
-  <header class="main-header">
+<body class="page-body">
+<header class="main-header">
   <a class="main-header__logo">
     <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
   </a>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav_wrapper">
+    <div class="main-nav main-nav_wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+        <li class="site-list__item ">
+          <a class="main-nav__link" href="../index.html">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Фото и видео</a>
+          <a class="main-nav__link site-list__item--active" href="../catalog.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Форма отзыва</a>
+          <a class="main-nav__link" href="../form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML academy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
         </li>
       </ul>
       <div class="main-nav__list user-list">
       </div>
     </div>
   </nav>
-</header>
-  <main class="main-container">
-    <div class="welcom-block">
-    <img class="welcome-block__main-image" src="img/pic.png" alt="wall">
+  <div class="sedona-welcome-block">
+    <div class="sedona-slogan">
+    </div>
   </div>
-    <article class="galery">
-        <header class="galery">
-          <h1 class="advantage__title"> ФОТО И ВИДЕО</h1>
-      <p class="main-article__text">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
-        </header>
-        <ul class="galery">
-          <li class="galery_items galery_items--Bimages">
-            <div class="galery">
-                <div class="galery-image__wraper">
-                  <picture>
-                  <source srcset="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-1-desktop.jpg.png?raw=trueim" media="(min-width:1200px)">
-                  <img  src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-1-desktop.jpg.png?raw=trueim" alt="изображение просторы">
-                  </picture>
-                </div>
-              <section class="galery-image__footer">
-                <div class="gallery-image__card">
-                  <h3 class="advantage__title">Неродные просторы</h3>
-                  <p class="gallery-image__author">Автор фото: Борис</p>
-                </div>
-                <div class="gallery-image__like">
-                  <button class="likes__like-button" type="submit">
-                    <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" alt="icon like">
-                  </button>
-                  <span class="galery-images count">1350</span>
-                </div>
-              </section>
-            </div>
-          </li>
-          <li class="galery_items galery_items--Simages">
-            <div class="galery">
-              <div class="galery-image__wraper">
-                <picture>
-                  <source srcset="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-2-desktop.jpg.png?raw=true" media="(min-width:400px)">
-                  <img src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-2-desktop.jpg.png?raw=true" alt="местная растительность">
-                </picture>
-              </div>
-              <section class="galery-image__footer">
-                <div class="gallery-image__card">
-                  <h3 class="advantage__title">Местная растительность</h3>
-                  <p class="gallery-image__author">Автор фото: Сергей</p>
-                </div>
-                <div class="gallery-image__like">
-                  <button class="likes__like-button" type="submit">
-                    <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" alt="icon like">
-                  </button>
-                  <span class="galery-images count">143</span>
-                </div>
-              </section>
-            </div>
-          </li>
-          <li class="galery_items galery_items--Simages">
-            <div class="galery">
-              <div class="galery-image__wraper">
-                <picture>
-                  <source srcset="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-3-desktop.jpg.png?raw=true" media="(min-width:400px)">
-                  <img src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-3-desktop.jpg.png?raw=true" alt="Дорога на север">
-                </picture>
-              </div>
-              <section class="galery-image__footer">
-                <div class="gallery-image__card">
-                  <h3 class="advantage__title">Дорога на север</h3>
-                  <p class="gallery-image__author">Автор фото: Петр</p>
-                </div>
-                <div class="gallery-image__like">
-                  <button class="likes__like-button" type="submit">
-                    <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" alt="icon like">
-                  </button>
-                  <span class="galery-images count">96</span>
-                </div>
-              </section>
-            </div>
-          </li>
-          <li class="galery_items galery_items--Simages">
-            <div class="galery">
-              <div class="galery-image__wraper">
-                <picture>
-                  <source srcset="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-4-desktop.jpg.png?raw=true" media="(min-width:400px)">
-                  <img  src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task2/source/img/photo-4-desktop.jpg.png?raw=true" alt="Мост дьявола">
-                </picture>
-              </div>
-              <section class="galery-image__footer">
-                <div class="gallery-image__card">
-                  <h3 class="advantage__title">Мост дьявола</h3>
-                  <p class="gallery-image__author">Автор фото: Антон</p>
-                </div>
-                <div class="gallery-image__like">
-                  <button class="likes__like-button" type="submit">
-                    <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" alt="icon like">
-                  </button>
-                  <span class="galery-images count">254</span>
-                </div>
-              </section>
-            </div>
-          </li>
-        </ul>
-        <section class="video">
-          <header class="video__header">
-            <h2 class="video__title">Все еще сомневаетесь?</h2>
-            <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </header>
-          <div class="video__poster">
-            <picture>
-              <source srcset="img/video-desktop1.png" media="(min-width:1200px)">
-              <img src="img/video-desktop1.png" alt="video">
-            </picture>
+  <h1 class="visually-hidden">Сайт Sedona</h1>
+</header>
+<main class="main-container">
+  <section class="catalog-galery">
+    <div class="main-container__description-catalog">
+      <h2 class="main-container container-title"> ФОТО И ВИДЕО</h2>
+      <p class="main-container__text">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
+  </div>
+    <div class="catalog-galery__wrapper">
+      <div class="catalog-galery__items media-item catalog-galery_items--first">
+        <div class="catalog-item__img catalog-galery_items--first">
+          <picture class="photo">
+            <img class="photo" src="img/photo-1-desktop.jpg" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
+          </picture>
+        </div>
+        <div class="catalog-item__info">
+        <div class="catalog-item__title">
+          <h2 class="catalog-item__heading">Неродные просторы</h2>
+          <p class="catalog-item__author">Автор фото: Борис</p>
+      </div>
+        <div class="catalog-item__views margin-right">
+          <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" class="catalog-galery__like alt="icon like">
+          <span class="catalog-item__views-number">1350</span>
+        </div>
+      </div>
+      </div>
+      <div class="catalog-galery__items catalog-item__img--small ">
+        <div class="catalog-item__img ">
+          <picture class="photo">
+            <img class="photo" src="img/photo-3-desktop.jpg.png" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
+          </picture>
+        </div>
+        <div class="catalog-item__info">
+          <div class="catalog-item__title">
+            <h2 class="catalog-item__heading">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h2>
+            <p class="catalog-item__author">Автор фото: Сергей</p>
           </div>
-        </section>
-      </article>
-    <footer class="footer footer-catalog">
-    <span class="tag-item">#VISITSEDONA</span>
-    <ul class="social__list footer-index">
-    <li><a href="" class="buttin-VK">VK</a></li>
-    <li><a href="" class="buttin-Tl">Telegram</a></li>
-    <li><a href="" class="buttin-Tl">Youtube</a></li>
+          <div class="catalog-item__views margin-right">
+            <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" class="catalog-galery__like alt="icon like">
+            <span class="catalog-item__views-number">143</span>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-galery__items catalog-item__img--small">
+        <div class="catalog-item__img ">
+          <picture class="photo">
+            <img class="photo" src="img/photo-4-desktop.jpg.png" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
+          </picture>
+        </div>
+        <div class="catalog-item__info">
+          <div class="catalog-item__title">
+            <h2 class="catalog-item__heading">Дорога на север</h2>
+            <p class="catalog-item__author">Автор фото: Петр</p>
+          </div>
+          <div class="catalog-item__views margin-right">
+            <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" class="catalog-galery__like alt="icon like">
+            <span class="catalog-item__views-number">96</span>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-galery__items catalog-item__img--small">
+        <div class="catalog-item__img ">
+          <picture class="photo">
+            <img class="photo" src="img/photo-2-desktop.jpg.png" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
+          </picture>
+        </div>
+        <div class="catalog-item__info">
+          <div class="catalog-item__title">
+            <h2 class="catalog-item__heading">Мост дьявола</h2>
+            <p class="catalog-item__author">Автор фото: Антон</p>
+          </div>
+          <div class="catalog-item__views margin-right">
+            <img src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/fc0ef4eda885fa0640db0617fac63d609cab1caf/source/img/like-icon.svg.svg" class="catalog-galery__like alt="icon like">
+            <span class="catalog-item__views-number">254</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="video-block main-row-margin">
+    <h2 class="video-bllock__title-block ">Все еще сомневаетесь?</h2>
+    <p class="video-block__text video-block__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+    <div class="video-block__poster">
+      <div class="logo-play">
+      </div>>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <span class="page-footer__tag page-footer__tag--padding">#VISITSEDONA</span>
+  <ul class="page-footer page-footer_list">
+    <li><a href="" class="footer-button footer-button-VK"></a></li>
+    <li><a href="" class="footer-button footer-button-Tl"></a></li>
+    <li><a href="" class="footer-button footer-button-yt"></a></li>
   </ul>
-    <div class="developer-item">
+  <div class="page-footer__developer page-footer__developer--padding">
+    <span class="page-footer__text">Разработано</span>
     <a href="https://htmlacademy.ru/">
-      <span>Разработано</span>
-      <img class="footer-index__developer-image" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true" alt="лого академии">
+      <img class="page-footer__academylogo" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true" alt="лого HTML academy">
     </a>
   </div>
-  </footer>
-  </main>
+</footer>
 </body>
 </html>
