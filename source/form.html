@@ -11,24 +11,20 @@
     <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
   </a>
   <nav class="main-nav">
-    <div class="main-nav main-nav_wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item ">
-          <a class="main-nav__link" href="../index.html">Главная</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link site-list__item--active" href="../catalog.html">Фото и видео</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="../form.html">Форма отзыва</a>
-        </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
-        </li>
-      </ul>
-      <div class="main-nav__list user-list">
-      </div>
-    </div>
+    <ul class="main-nav__site-list">
+      <li class="site-list__item site-list__item--active">
+        <a class="main-nav__link">Главная</a>
+      </li>
+      <li class="site-list__item href="../index.html"">
+        <a class="main-nav__link" href="../catalog.html">Фото и видео</a>
+      </li>
+      <li class="site-list__item">
+        <a class="main-nav__link  main-nav__link--active">Форма отзыва</a>
+      </li>
+      <li class="site-list__item">
+        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+      </li>
+    </ul>
   </nav>
   <div class="sedona-welcome-block">
     <div class="sedona-slogan">
@@ -37,14 +33,43 @@
   <h1 class="visually-hidden">Сайт Sedona</h1>
 </header>
 <main class="main-container">
-  <section class="feedback">
-    <div class="feedback-header">
-      <h1 class="feedback__title"> ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
-      <h2 class="feedback__text"> ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ.</h2>
-    </div>
-    <form class="feedback-forms" action="https://echo.htmlacademy.ru">
+  <div class="main-container__description">
+    <h2 class="main-container__title main-container__title--indent">Оставьте свой отзыв</h2>
+    <p class="main-container__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+  </div>
+
+  <section class="feedback feedback--indent">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru">
+      <div>
+        <div class="contact-info">
+      <div class="form-container form-container--name">
+          <h2 class="feedback__title">
+            представьтесь:
+          </h2>
+          <div class="form-container__item">
+            <label class="form-container__label">Имя*:</label>
+            <input class="form-container__input" type="text" name="first-name" placeholder="Имя" value="Петр" required="">
+          </div>
+            <p class="feedback form-fieldset__name">
+            <label class="feedback-label">Фамилия*:</label>
+            <input class="feedback-input" type="text" name="first-name" placeholder="Фамилия" value="Тюкавкин" required=""> </p>
+          <p class="feedback form-fieldset__name">
+            <label class="feedback-label">Отчество*:</label>
+            <input class="feedback-input" type="text" name="first-name" placeholder="Отчество" value="Петрович" required=""> </p>
+      </div>
+      <div class="form-container form-container--contact">
+          <legend class="feedback__title form-fieldset__contact">
+              контактная информация:
+          </legend>
+          <p class="feedback form-fieldset__name">
+            <label class="feedback-label">Контактный телефон*:</label>
+            <input class="feedback-input" type="text" name="first-name" placeholder="Телефон" value="Введите телефон" required=""> </p>
+          <p class="feedback form-fieldset__name">
+            <label class="feedback-label">Электронная почта*:</label>
+            <input class="feedback-input" type="text" name="first-name" placeholder="e-mail" value="Введите e-mail" required=""> </p>
+      </div>
+      </div>
       <div class="form-container form-container--impressions">
-        <fieldset class="feedback form-fieldset">
           <legend class="feedback form-fieldset__impressions">
             ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:
           </legend>
@@ -54,37 +79,6 @@
             <label class="form-selector-dot">Скорее отрицательные</label></p>
           <p><input class="form-selector" type="radio">
             <label class="form-selector-dot">Затрудняюсь ответить</label></p>
-        </fieldset>
-      </div>
-      <div class="form-container form-container--name">
-        <fieldset class="feedback form-fieldset">
-          <legend class="feedback form-fieldset__impressions">
-            ПРЕДСТАВЬТЕСЬ:
-          </legend>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Имя*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Имя" value="Петр" required=""> </p>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Фамилия*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Фамилия" value="Тюкавкин" required=""> </p>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Отчество*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Отчество" value="Петрович" required=""> </p>
-        </fieldset>
-      </div>
-      <div class="form-container form-container--contact">
-        <fieldset class="feedback form-fieldset">
-          <legend class="feedback form-fieldset__contact">
-            КОНТАКТНАЯ ИНФОРМАЦИЯ:
-          </legend>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Контактный телефон*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Телефон" value="Введите телефон" required=""> </p>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Электронная почта*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="e-mail" value="Введите e-mail" required=""> </p>
-        </fieldset>
-
       </div>
       <div class="form-container form-container--sights">
         <fieldset class="feedback form-fieldset">
@@ -110,12 +104,12 @@
           <textarea class="feedback form-fieldset__input-textarea" name="name" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
       </div>
-      <div class="feedback-button">
+      <div class="button feedback-button">
         <fieldset class="feedback form-fieldset">
-          <button class="button feedback-forms" type="button"><span class="visually-hidden">Отправить отзыв</span></button>
+          <a href="hotels.html" class="button feedback-block__button">Отправить отзыв</a>
           <p class="feedback feedback-forms__notice">* — обязательные поля</p>
         </fieldset>
-      </div>npm test
+      </div>
     </form>
   </section>
 </main>
