@@ -12,10 +12,10 @@
   </a>
   <nav class="main-nav">
     <ul class="main-nav__site-list">
-      <li class="site-list__item site-list__item--active">
-        <a class="main-nav__link">Главная</a>
+      <li class="site-list__item">
+        <a class="main-nav__link" href="../index.html">Главная</a>
       </li>
-      <li class="site-list__item href="../index.html"">
+      <li class="site-list__item">
         <a class="main-nav__link" href="../catalog.html">Фото и видео</a>
       </li>
       <li class="site-list__item">
@@ -35,83 +35,99 @@
 <main class="main-container">
   <div class="main-container__description">
     <h2 class="main-container__title main-container__title--indent">Оставьте свой отзыв</h2>
-    <p class="main-container__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    <p class="main-container__text">помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
+  </div>
+  <div class="feedback feedback--indent">
+    <div class="feedback-block feedback-block--name">
+      <h2 class="feedback-block__title">
+        представьтесь:
+      </h2>
+      <ul class="feedback-list">
+        <li class="feedback-list_item">
+          <label class="feedback-list__itemes-name">Имя*:</label>
+          <input type="text" class="feedback-list__itemes-text" placeholder="Петр" required="">
+        </li>
+        <li class="feedback-list__items">
+          <label class="feedback-list__itemes-name">Фамилия*:</label>
+          <input type="text" class="feedback-list__itemes-text" placeholder="Пустота" required="">
+        </li>
+        <li class="feedback-list__items">
+          <label class="feedback-list__itemes-name">Отчество*:</label>
+          <input type="text" class="feedback-list__itemes-text" placeholder="Викторович" required="">
+        </li>
+      </ul>
+    </div>
+    <div class="feedback-block feedback-block--contact">
+      <h2 class="feedback-block__title">
+        контактная информация:
+      </h2>
+      <ul class="feedback-list">
+        <li class="feedback-list__items">
+          <label class="feedback-list__itemes-name">Контактный телефон*:</label>
+          <input type="text" class="feedback-list__itemes-text" placeholder="Введите телефон" required="">
+        </li>
+        <li class="feedback-list__items">
+          <label class="feedback-list__itemes-name">Электронная почта*:</label>
+          <input type="text" class="feedback-list__itemes-text" placeholder="Введите e-mail" required="">
+        </li>
+      </ul>
+    </div>
+    <div class="feedback-block feedback-block--impression">
+      <h2 class="feedback-block__title feedback-block__title--ident">
+        ваше общее впечатление:
+      </h2>
+      <ul class="feedback-list feedback-list--row">
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="radio" checked="true" name="radio" class="visually-hidden radio-input" id="radio1">
+          <label class="feedback-list__itemes-heading radio" for="radio1">Скорее положительные</label>
+        </li>
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="radio" checked="checked" name="radio" class="visually-hidden radio-input" id="radio2">
+          <label class="feedback-list__itemes-heading radio" for="radio2">Скорее отрицательные</label>
+        </li>
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="radio" checked="checked" name="radio" class="visually-hidden radio-input" id="radio3">
+          <label class="feedback-list__itemes-heading radio" for="radio3">Затрудняюсь ответить</label>
+        </li>
+      </ul>
+    </div>
+    <div class="feedback-block feedback-block--attraction">
+      <h2 class="feedback-block__title feedback-block__title--ident">
+        Посещенные достопримечательности
+      </h2>
+      <ul class="feedback-list feedback-list--row">
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="checkbox" checked="true" name="" class="visually-hidden radio-input" id="checkbox1">
+          <label class="feedback-list__itemes-heading checkbox" for="checkbox1">Мост Дьявола</label>
+        </li>
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="checkbox" checked="true" name="checkbox" class="visually-hidden radio-input" id="checkbox2">
+          <label class="feedback-list__itemes-heading checkbox" for="checkbox2">Гора-Колокол</label>
+        </li>
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="checkbox" checked="true" name="checkbox" class="visually-hidden radio-input" id="checkbox3">
+          <label class="feedback-list__itemes-heading checkbox" for="checkbox3">Слайд-парк</label>
+        </li>
+        <li class="feedback-list__items feedback-list__itemes--impression">
+          <input type="checkbox" checked="folse" name="checkbox" class="visually-hidden radio-input" id="checkbox4">
+          <label class="feedback-list__itemes-heading checkbox" for="checkbox4">Красные скалы</label>
+        </li>
+      </ul>
+    </div>
+    <div class="feedback-block feedback-block--emotion">
+      <h2 class="feedback-block__title">
+        Опишите свои эмоции
+      </h2>
+      <textarea placeholder="Опишите подробно все свои восторги" class="feedback__filds"></textarea>
+      <div class="feedback-block--sending feedback-sending--indent">
+        <a href="hotels.html" class="button feedback-block__button">Найти гостиницу</a>
+        <h2 class="feedback-block__required-text">
+          * — обязательные поля
+        </h2>
+      </div>
+    </div>
   </div>
 
-  <section class="feedback feedback--indent">
-    <form class="feedback-form" action="https://echo.htmlacademy.ru">
-      <div>
-        <div class="contact-info">
-      <div class="form-container form-container--name">
-          <h2 class="feedback__title">
-            представьтесь:
-          </h2>
-          <div class="form-container__item">
-            <label class="form-container__label">Имя*:</label>
-            <input class="form-container__input" type="text" name="first-name" placeholder="Имя" value="Петр" required="">
-          </div>
-            <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Фамилия*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Фамилия" value="Тюкавкин" required=""> </p>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Отчество*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Отчество" value="Петрович" required=""> </p>
-      </div>
-      <div class="form-container form-container--contact">
-          <legend class="feedback__title form-fieldset__contact">
-              контактная информация:
-          </legend>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Контактный телефон*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="Телефон" value="Введите телефон" required=""> </p>
-          <p class="feedback form-fieldset__name">
-            <label class="feedback-label">Электронная почта*:</label>
-            <input class="feedback-input" type="text" name="first-name" placeholder="e-mail" value="Введите e-mail" required=""> </p>
-      </div>
-      </div>
-      <div class="form-container form-container--impressions">
-          <legend class="feedback form-fieldset__impressions">
-            ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:
-          </legend>
-          <p> <input class="form-selector" type="radio" value="positive" checked>
-            <label class="form-selector-dot">Скорее положительные</label></p>
-          <p><input class="form-selector" type="radio">
-            <label class="form-selector-dot">Скорее отрицательные</label></p>
-          <p><input class="form-selector" type="radio">
-            <label class="form-selector-dot">Затрудняюсь ответить</label></p>
-      </div>
-      <div class="form-container form-container--sights">
-        <fieldset class="feedback form-fieldset">
-          <legend class="feedback form-fieldset__sight">
-            ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:
-          </legend>
-          <p> <input class="form-selector" type="checkbox" value="positive" checked>
-            <label class="form-selector-dot">Мост Дьявола</label>
-            <input class="form-selector" type="checkbox" value="positive" checked>
-            <label class="form-selector-dot">Гора-Колокол</label>
-          </p>
-          <p> <input class="form-selector" type="checkbox" value="positive" checked>
-            <label class="form-selector-dot">Слайд-парк</label>
-            <input class="form-selector" type="checkbox" >
-            <label class="form-selector-dot">Красные скалы</label>
-          </p>
-        </fieldset>
-      </div>
-      <div class="form-container form-container--emotion">
-        <fieldset class="feedback form-fieldset">
-          <legend class="class="feedback form-fieldset__emotion">ОПИШИТЕ СВОИ ЭМОЦИИ:
-          </legend>
-          <textarea class="feedback form-fieldset__input-textarea" name="name" placeholder="Опишите подробно все свои восторги"></textarea>
-        </fieldset>
-      </div>
-      <div class="button feedback-button">
-        <fieldset class="feedback form-fieldset">
-          <a href="hotels.html" class="button feedback-block__button">Отправить отзыв</a>
-          <p class="feedback feedback-forms__notice">* — обязательные поля</p>
-        </fieldset>
-      </div>
-    </form>
-  </section>
 </main>
 <footer class="page-footer">
   <span class="page-footer__tag page-footer__tag--padding">#VISITSEDONA</span>

@@ -15,12 +15,12 @@
   align-items: center;
 }
 
-.main-container__description {
+.main-container__description, {
   width: 484px;
   text-align: center;
 }
 
-.feedback__title,
+.feedback-block__title,
 .advantages__title,
 .main-container__title {
   font-family: @main-font;
@@ -31,7 +31,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 
 .advantages__title {
   width: 150px;
@@ -121,12 +120,11 @@
   top: 9px;
 }
 
-.advantages__numbers,
-.advantages__numbers-dark {
+.feedback-block__title {
   position: relative;
 }
 
-.advantages__numbers::after,
+.feedback-block__title::after,
 .advantages__numbers::before {
   position: absolute;
   content: "";
