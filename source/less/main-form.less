@@ -20,6 +20,30 @@
   margin: 56px 28px;
 }
 
+.feedback-block__title--strike {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.feedback-block__title--strike::after,
+.feedback-block__title--strike::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 0.5px;
+  background-color: #000000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.feedback-block__title--strike::before {
+  left: 0;
+}
+
+.feedback-block__title--strike::after {
+  right: 0;
+}
+
 .feedback-block {
   position: relative;
   width: 100%;

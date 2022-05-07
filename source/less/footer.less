@@ -7,6 +7,13 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .page-footer {
+    flex-direction: column;
+    height: 233px;
+  }
+}
+
 .page-footer--indent {
   padding-top: 90px;
 }
@@ -16,11 +23,20 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
 }
 
 .page-footer__tag--padding {
-  padding-left: 144px;
+  padding-left: 88px;
 }
+
+@media screen and (max-width: 768px) {
+  .page-footer__tag--padding {
+    padding-left: 0;
+    padding-top: 43px;
+  }
+}
+
 
 .page-footer_list {
   display: flex;
@@ -64,6 +80,12 @@
   padding-right: 107px;
 }
 
+@media screen and (max-width: 768px) {
+  .page-footer__developer--padding {
+    padding-right: 0;
+  }
+}
+
 .page-footer__academylogo {
   line-height: 0;
 }
@@ -78,5 +100,5 @@
 }
 
 .page-footer__text {
-  margin-right: 10px;
+  margin-right: 27px;
 }
