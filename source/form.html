@@ -10,16 +10,17 @@
   <a class="main-header__logo">
     <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
   </a>
+  <a class="sedona-button" href="index.html"></a>
   <nav class="main-nav">
-    <ul class="main-nav__site-list">
-      <li class="site-list__item">
+    <ul class="main-nav__site-list main-nav__site-list--hidden">
+      <li class="site-list__item ">
         <a class="main-nav__link" href="../index.html">Главная</a>
       </li>
       <li class="site-list__item">
-        <a class="main-nav__link" href="../catalog.html">Фото и видео</a>
+        <a class="main-nav__link main-nav__link--active">Фото и видео</a>
       </li>
       <li class="site-list__item">
-        <a class="main-nav__link  main-nav__link--active">Форма отзыва</a>
+        <a class="main-nav__link" href="../form.html">Форма отзыва</a>
       </li>
       <li class="site-list__item">
         <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
@@ -58,17 +59,17 @@
       </ul>
     </div>
     <div class="feedback-block feedback-block--contact">
-      <h2 class="feedback-block__title">
+      <h2 class="feedback-block__title feedback-block__title--nowrap">
         контактная информация:
       </h2>
       <ul class="feedback-list">
         <li class="feedback-list__items">
           <label class="feedback-list__itemes-name">Контактный телефон*:</label>
-          <input type="text" class="feedback-list__itemes-text" placeholder="Введите телефон" required="">
+          <input type="text" class="feedback-list__itemes-text feedback-list__itemes-phone" placeholder="Введите телефон" required="">
         </li>
         <li class="feedback-list__items">
           <label class="feedback-list__itemes-name">Электронная почта*:</label>
-          <input type="text" class="feedback-list__itemes-text" placeholder="Введите e-mail" required="">
+          <input type="text" class="feedback-list__itemes-text feedback-list__itemes-mail" placeholder="Введите e-mail" required="">
         </li>
       </ul>
     </div>
@@ -91,9 +92,9 @@
         </li>
       </ul>
     </div>
-    <div class="feedback-block feedback-block--attraction">
-      <h2 class="feedback-block__title feedback-block__title--ident">
-        Посещенные достопримечательности
+    <div class="feedback-block  feedback-block--attraction">
+      <h2 class="feedback-block__title  feedback-block__title--strike feedback-block__title--ident">
+        Посещенные<br> достопримечательности
       </h2>
       <ul class="feedback-list feedback-list--row">
         <li class="feedback-list__items feedback-list__itemes--impression">
@@ -124,6 +125,17 @@
         <h2 class="feedback-block__required-text">
           * — обязательные поля
         </h2>
+      </div>
+    </div>
+    <div class="popup popup--failure visually-hidden">
+      <h2 class="popup__heading popup__heading--failure">Что-то пошло не так!</h2>
+      <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button popup__button popup__button--failure">ОК</button>
+    </div>
+    <div class="popup popup--success visually-hidden">
+      <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup__grey-block"><button class="button popup__button">Закрыть окно</button>
       </div>
     </div>
   </div>
