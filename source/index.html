@@ -6,39 +6,45 @@
   <title>Sedona - главная страница</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="page-body">
-<header class="main-header">
-  <a class="main-header__logo">
-    <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
+<body>
+<div class="body-wrapper">
+  <header>
+  <a class="header__logo">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/header_logo.png">
+      <source media="(min-width: 768px)" srcset="img/header_logo.png">
+      <img class="header__logo-image" src="img/header_logo.png" alt="лого Седона">
+    </picture>
   </a>
-  <nav class="main-nav">
-      <ul class="main-nav__site-list">
-        <li class="site-list__item">
-          <a class="main-nav__link main-nav__link--active">Главная</a>
+  <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="../catalog.html">Фото и видео</a>
+        <li class="nav__item">
+          <a class="nav__link" href="../catalog.html">Фото и видео</a>
         </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="../form.html">Форма отзыва</a>
+        <li class="nav__item">
+          <a class="nav__link" href="../form.html">Форма отзыва</a>
         </li>
-        <li class="site-list__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+        <li class="nav__item">
+          <a class= "nav__link" href="https://htmlacademy.ru/">HTML academy</a>
         </li>
       </ul>
   </nav>
-  <div class="welcome-block">
-    <div class="slogan">
-    </div>
+</header>
+  <main class="main">
+  <div class="welcome">
+  <div class="welcome__slogan">
+  </div>
   </div>
   <h1 class="visually-hidden">Сайт Sedona</h1>
-</header>
-<main class="main-container">
-  <div class="main-container__description">
-    <h2 class="main-container__title main-container__title--indent">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-    <p class="main-container__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-  </div>
-  <section class="main-container__reason">
+  <div class="main__container">
+  <section class="main__description">
+    <h2 class="main__title main__title--indent">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+    <p class="main__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  </section>
+  <section class="main__reason">
     <div class="advantages advantages__block--colored advantages__block--triangle">
       <div class="advantages__block">
         <h3 class="advantages__title advantages__title--indent">Настоящий городок</h3>
@@ -47,7 +53,7 @@
           там течет своя жизнь
         </p>
       </div>
-      <div class="advantages__block description-images">
+      <div class="advantages__block advantages-images">
       <img  src="img/photo-city@1x.jpg" alt="img/pic.png">
       </div>
     </div>
@@ -77,7 +83,7 @@
       </li>
     </ul>
     <div class="advantages advantages__block--colored">
-      <div class="advantages__block description-images  description-images--avil">
+      <div class="advantages__block advantages-images  advantages-images--avil">
         <img src="img/photo-bridge@1x.png" alt="изображение">
       </div>
       <div class="advantages__block advantages__block--avil">
@@ -114,6 +120,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618180.6545140955!2d-112.33722840791056!3d34.78850446968487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589272314359!5m2!1sru!2sru"
             width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map-block__map"></iframe>
   </section>
+  </div>
 </main>
 <footer class="page-footer">
   <span class="page-footer__tag page-footer__tag--padding">#VISITSEDONA</span>
@@ -128,6 +135,8 @@
             <img class="page-footer__academylogo" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true" alt="лого HTML academy">
     </a>
   </div>
+
 </footer>
+</div>
 </body>
 </html>

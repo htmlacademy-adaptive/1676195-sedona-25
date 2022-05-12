@@ -7,13 +7,6 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .page-footer {
-    flex-direction: column;
-    height: 233px;
-  }
-}
-
 .page-footer--indent {
   padding-top: 90px;
 }
@@ -26,30 +19,9 @@
   font-weight: 700;
 }
 
-@media (max-width: 1200px) {
-  .feedback-list__itemes-text {
-    width: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  .feedback-list__itemes-text {
-    width: 280px;
-  }
-}
-
-
 .page-footer__tag--padding {
   padding-left: 88px;
 }
-
-@media screen and (max-width: 768px) {
-  .page-footer__tag--padding {
-    padding-left: 0;
-    padding-top: 43px;
-  }
-}
-
 
 .page-footer_list {
   display: flex;
@@ -93,12 +65,6 @@
   padding-right: 107px;
 }
 
-@media screen and (max-width: 768px) {
-  .page-footer__developer--padding {
-    padding-right: 0;
-  }
-}
-
 .page-footer__academylogo {
   line-height: 0;
 }
@@ -114,4 +80,43 @@
 
 .page-footer__text {
   margin-right: 27px;
+}
+
+/* медиазапросы*/
+@media screen and (max-width: 768px) {
+  .page-footer {
+    flex-direction: column;
+    height: 233px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer_list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer__developer--padding {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-footer__tag--padding {
+    padding-left: 0;
+    padding-top: 43px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .feedback-list__itemes-text {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-list__itemes-text {
+    width: 280px;
+  }
 }
