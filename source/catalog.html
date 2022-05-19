@@ -7,17 +7,17 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="body-wrapper">
+<div class="wrapper">
   <header class="header">
-  <a class="header__logo">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/header_logo.png">
-      <source media="(min-width: 768px)" srcset="img/header_logo.png">
-      <img class="header__logo-image" src="img/header_logo.png" alt="лого Седона">
+    <a class="header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/header_logo.svg">
+        <source media="(min-width: 768px)" srcset="img/header_logo.svg">
+        <img class="header__logo-image" src="img/header_logo.svg" alt="лого Седона">
     </picture>
-  </a>
-  <a class="nav__button" href="index.html"></a>
-  <nav class="nav">
+    </a>
+    <button class="nav__button" href="#"></button>
+    <nav class="header_nav">
     <ul class="nav__list nav__list--hidden">
       <li class="nav__item ">
         <a class="nav__link" href="../index.html">Главная</a>
@@ -32,110 +32,111 @@
         <a class="nav__link" href="https://htmlacademy.ru/">HTML academy</a>
       </li>
     </ul>
-  </nav>
-
-</header>
-  <main>
-  <div class="sedona">
-    <div class="sedona__slogan">
-    </div>
-  </div>
-  <h1 class="visually-hidden">Сайт Sedona</h1>
-  <div class="main__container">
-  <section class="main__description">
-    <h2 class="main__title main__title--indent">Фото и видео</h2>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="sedona main__sedona">
+      <h1 class="visually-hidden">Сайт Sedona</h1>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona.svg">
+        <img class="sedona__slogan sedona__slogan--indent" src="img/sedona.svg" alt="лого Седона">
+      </picture>
+    </section>
+    <section class="description main__description">
+    <h2 class="main__title main__title--sedona main__title--indent">Фото и видео</h2>
     <p class="main__text main__text--indent">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть  о политике и экономия.</p>
   </section>
-  <section class="gallery">
-      <div class="gallery-block gallery-block--strike">
-        <div class="gallery-item__img gallery-item__img--first">
+    <section class="gallery main__gallery">
+      <div class="gallery__block gallery__block--strike">
+        <div class="gallery__img gallery__img--first">
           <picture class="photo">
-            <img class="photo photo--first" src="img/photo-1-desktop.jpg" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
+            <img class="photo" src="img/photo-1-desktop.jpg" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
           </picture>
         </div>
-        <div class="gallery-item__info gallery-info--indent">
-        <div class="gallery-item__title">
-          <h2 class="gallery-item__heading">Неродные просторы</h2>
-          <p class="gallery-item__author">Автор фото: Борис</p>
+        <div class="card gallery__card card--indent">
+            <div class="card__item">
+          <h2 class="card__heading">Неродные просторы</h2>
+          <p class="card__author">Автор фото: Борис</p>
       </div>
-        <div class="gallery-item__views">
-            <span class="gallery-item__views-number">1350</span>
+            <div class="card__views">
+            <span class="card__views-number">1350</span>
+        </div>
         </div>
       </div>
-      </div>
-      <div class="gallery-block gallery-block--items1 gallery-block--strike">
-        <div class="gallery-item__img ">
+      <div class="gallery__block gallery__block--items1 gallery__block--strike">
+        <div class="gallery__img ">
           <picture class="photo">
             <img class="photo" src="img/photo-2-desktop.jpg.png" srcset="img/img/photo-2-desktop.jpg 2x" alt="фото">
           </picture>
         </div>
-        <div class="gallery-item__info gallery-info--indent">
-          <div class="gallery-item__title">
-            <h2 class="gallery-item__heading">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h2>
-            <p class="gallery-item__author">Автор фото: Сергей</p>
+        <div class="card gallery__card card--indent">
+            <div class="card__item">
+            <h2 class="card__heading">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h2>
+            <p class="card__author">Автор фото: Сергей</p>
           </div>
-          <div class="gallery-item__views">
-            <span class="gallery-item__views-number">143</span>
+            <div class="card__views">
+            <span class="card__views-number">143</span>
           </div>
         </div>
       </div>
-      <div class="gallery-block gallery-block--items2 gallery-block--strike">
-        <div class="gallery-item__img">
+      <div class="gallery__block gallery__block--items2 gallery__block--strike">
+        <div class="gallery__img">
           <picture class="photo">
             <img class="photo" src="img/photo-4-desktop.jpg.png" srcset="img/img/photo-1-desktop.jpg 2x" alt="">
           </picture>
         </div>
-        <div class="gallery-item__info gallery-info--indent">
-          <div class="gallery-item__title">
-            <h2 class="gallery-item__heading">Дорога на север</h2>
-            <p class="gallery-item__author">Автор фото: Петр</p>
+        <div class="card gallery__card card--indent">
+            <div class="card__item">
+            <h2 class="card__heading">Дорога на север</h2>
+            <p class="card__author">Автор фото: Петр</p>
           </div>
-          <div class="gallery-item__views">
-            <span class="gallery-item__views-number">96</span>
+            <div class="card__views">
+            <span class="card__views-number">96</span>
           </div>
         </div>
       </div>
-      <div class="gallery-block gallery-block--items3 gallery-block--strike">
-      <div class="gallery-item__img">
-        <picture class="photo">
-          <img class="photo" src="img/photo-3-desktop.jpg.png" srcset="img/img/photo-3-desktop.jpg 2x" alt="">
-        </picture>
-      </div>
-      <div class="gallery-item__info">
-        <div class="gallery-item__title">
-          <h2 class="gallery-item__heading">Мост дьявола</h2>
-          <p class="gallery-item__author">Автор фото: Антон</p>
+      <div class="gallery__block gallery__block--items3 gallery__block--strike">
+          <div class="gallery__img">
+          <picture class="photo">
+            <img class="photo" src="img/photo-3-desktop.jpg.png" srcset="img/img/photo-3-desktop.jpg 2x" alt="">
+          </picture>
+          </div>
+          <div class="card gallery__card">
+            <div class="card__item">
+          <h2 class="card__heading">Мост дьявола</h2>
+          <p class="card__author">Автор фото: Антон</p>
         </div>
-        <div class="gallery-item__views">
-            <span class="gallery-item__views-number">96</span>
+            <div class="card__views">
+            <span class="card__views-number">96</span>
         </div>
+          </div>
       </div>
-    </div>
     </section>
-  <section class="video-block gallery-strike">
-    <h2 class="video-block__title video-block__title--indent">Все еще сомневаетесь?</h2>
+    <section class="video main__video">
+    <h2 class="video__title video__title--indent">Все еще сомневаетесь?</h2>
     <span class="video-block__text video-block__text--indent">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
     <div class="video-block__poster video-block__poster--indent">
       <div class="logo-play">
       </div>
     </div>
   </section>
-</div>
   </main>
-  <footer class="page-footer">
-  <span class="page-footer__tag page-footer__tag--padding">#VISITSEDONA</span>
-  <ul class="page-footer page-footer_list">
-    <li><a href="" class="footer-button footer-button-VK"></a></li>
-    <li><a href="" class="footer-button footer-button-Tl"></a></li>
-    <li><a href="" class="footer-button footer-button-yt"></a></li>
-  </ul>
-  <div class="page-footer__developer page-footer__developer--padding">
-    <span class="page-footer__text">Разработано</span>
-    <a href="https://htmlacademy.ru/">
-      <img class="page-footer__academylogo" src="https://github.com/evsenia/1676195-sedona-25/blob/module2-task1/source/img/htmlacademy.svg.png?raw=true" alt="лого HTML academy">
-    </a>
-  </div>
-</footer>
+  <footer class="footer">
+    <span class="footer__tag footer__tag--padding">#VISITSEDONA</span>
+    <ul class="footer page-footer_list">
+      <li><a href="" class="footer__button footer__button-VK"></a></li>
+      <li><a href="" class="footer__button footer__button-Tl"></a></li>
+      <li><a href="" class="footer__button footer__button-yt"></a></li>
+    </ul>
+    <div class="footer__developer footer__developer--padding">
+      <span class="page-footer__text">Разработано</span>
+      <a href="https://htmlacademy.ru/">
+        <img class="footer__academylogo" src="img/htmlacademy.svg" alt="лого HTML academy">
+      </a>
+    </div>
+
+  </footer>
 </div>
 </body>
 </html>

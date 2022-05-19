@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona - главная страница</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="body-wrapper">
+<div class="wrapper">
 <header class="header">
   <a class="header__logo">
     <picture>
@@ -17,7 +17,7 @@
     </picture>
   </a>
   <a class="nav__button" href="index.html"></a>
-  <nav class="nav">
+  <nav class="header_nav">
     <ul class="nav__list  nav__list--hidden">
       <li class="nav__item ">
         <a class="nav__link" href="../index.html">Главная</a>
@@ -33,15 +33,17 @@
       </li>
     </ul>
   </nav>
-
 </header>
-<main>
-  <div class="sedona">
-    <div class="sedona__slogan">
-    </div>
-  </div>
+  <main class="main">
+    <section class="sedona main__sedona">
+      <h1 class="visually-hidden">Сайт Sedona</h1>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona.svg">
+        <img class="sedona__slogan sedona__slogan--indent" src="img/sedona.svg" alt="лого Седона">
+      </picture>
+    </section>
   <h1 class="visually-hidden">Сайт Sedona</h1>
-  <div class="main__container">
   <div class="main__description">
     <h2 class="main__title main__title--indent">Оставьте свой отзыв</h2>
     <p class="main__text">помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
@@ -67,7 +69,7 @@
       </ul>
     </div>
     <div class="feedback-block feedback-block--contact">
-      <h2 class="feedback-block__title feedback-block__title--nowrap">
+      <h2 class="feedback-block__title ">
         контактная информация:
       </h2>
       <ul class="feedback-list">
