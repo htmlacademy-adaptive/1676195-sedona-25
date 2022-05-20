@@ -2,40 +2,51 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona - главная страница</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body class="page-body">
-<header class="main-header">
-  <a class="main-header__logo">
-    <img class="main-header__logo-image" src="https://raw.githubusercontent.com/evsenia/1676195-sedona-25/f87c950f73ae0817d8194dcb7360a7fc6874a2c9/source/img/header_logo.png" alt="лого Седона">
+<body>
+<div class="wrapper">
+<header class="header">
+  <a class="header__logo">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/header_logo.png">
+      <source media="(min-width: 768px)" srcset="img/header_logo.png">
+      <img class="header__logo-image" src="img/header_logo.png" alt="лого Седона">
+    </picture>
   </a>
-  <nav class="main-nav">
-    <ul class="main-nav__site-list">
-      <li class="site-list__item">
-        <a class="main-nav__link" href="../index.html">Главная</a>
+  <a class="nav__button" href="index.html"></a>
+  <nav class="header_nav">
+    <ul class="nav__list  nav__list--hidden">
+      <li class="nav__item ">
+        <a class="nav__link" href="../index.html">Главная</a>
       </li>
-      <li class="site-list__item">
-        <a class="main-nav__link" href="../catalog.html">Фото и видео</a>
+      <li class="nav__item">
+        <a class="nav__link" href="catalog.html">Фото и видео</a>
       </li>
-      <li class="site-list__item">
-        <a class="main-nav__link  main-nav__link--active">Форма отзыва</a>
+      <li class="nav__item">
+        <a class="nav__link nav__link--active">Форма отзыва</a>
       </li>
-      <li class="site-list__item">
-        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+      <li class="nav__item">
+        <a class="nav__link" href="https://htmlacademy.ru/">HTML academy</a>
       </li>
     </ul>
   </nav>
-  <div class="sedona-welcome-block">
-    <div class="sedona-slogan">
-    </div>
-  </div>
-  <h1 class="visually-hidden">Сайт Sedona</h1>
 </header>
-<main class="main-container">
-  <div class="main-container__description">
-    <h2 class="main-container__title main-container__title--indent">Оставьте свой отзыв</h2>
-    <p class="main-container__text">помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
+  <main class="main">
+    <section class="sedona main__sedona">
+      <h1 class="visually-hidden">Сайт Sedona</h1>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona.svg">
+        <img class="sedona__slogan sedona__slogan--indent" src="img/sedona.svg" alt="лого Седона">
+      </picture>
+    </section>
+  <h1 class="visually-hidden">Сайт Sedona</h1>
+  <div class="main__description">
+    <h2 class="main__title main__title--indent">Оставьте свой отзыв</h2>
+    <p class="main__text">помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
   </div>
   <div class="feedback feedback--indent">
     <div class="feedback-block feedback-block--name">
@@ -43,7 +54,7 @@
         представьтесь:
       </h2>
       <ul class="feedback-list">
-        <li class="feedback-list_item">
+        <li class="feedback-list__items">
           <label class="feedback-list__itemes-name">Имя*:</label>
           <input type="text" class="feedback-list__itemes-text" placeholder="Петр" required="">
         </li>
@@ -58,17 +69,17 @@
       </ul>
     </div>
     <div class="feedback-block feedback-block--contact">
-      <h2 class="feedback-block__title">
+      <h2 class="feedback-block__title ">
         контактная информация:
       </h2>
       <ul class="feedback-list">
         <li class="feedback-list__items">
           <label class="feedback-list__itemes-name">Контактный телефон*:</label>
-          <input type="text" class="feedback-list__itemes-text" placeholder="Введите телефон" required="">
+          <input type="text" class="feedback-list__itemes-text feedback-list__itemes-phone" placeholder="Введите телефон" required="">
         </li>
         <li class="feedback-list__items">
           <label class="feedback-list__itemes-name">Электронная почта*:</label>
-          <input type="text" class="feedback-list__itemes-text" placeholder="Введите e-mail" required="">
+          <input type="text" class="feedback-list__itemes-text feedback-list__itemes-mail" placeholder="Введите e-mail" required="">
         </li>
       </ul>
     </div>
@@ -91,24 +102,24 @@
         </li>
       </ul>
     </div>
-    <div class="feedback-block feedback-block--attraction">
-      <h2 class="feedback-block__title feedback-block__title--ident">
-        Посещенные достопримечательности
+    <div class="feedback-block  feedback-block--attraction">
+      <h2 class="feedback-block__title  feedback-block__title--strike feedback-block__title--ident">
+        Посещенные<br> достопримечательности
       </h2>
       <ul class="feedback-list feedback-list--row">
-        <li class="feedback-list__items feedback-list__itemes--impression">
+        <li class="feedback-list__items feedback-list__itemes--attraction">
           <input type="checkbox" checked="true" name="" class="visually-hidden radio-input" id="checkbox1">
           <label class="feedback-list__itemes-heading checkbox" for="checkbox1">Мост Дьявола</label>
         </li>
-        <li class="feedback-list__items feedback-list__itemes--impression">
+        <li class="feedback-list__items feedback-list__itemes--attraction">
           <input type="checkbox" checked="true" name="checkbox" class="visually-hidden radio-input" id="checkbox2">
           <label class="feedback-list__itemes-heading checkbox" for="checkbox2">Гора-Колокол</label>
         </li>
-        <li class="feedback-list__items feedback-list__itemes--impression">
+        <li class="feedback-list__items feedback-list__itemes--attraction">
           <input type="checkbox" checked="true" name="checkbox" class="visually-hidden radio-input" id="checkbox3">
           <label class="feedback-list__itemes-heading checkbox" for="checkbox3">Слайд-парк</label>
         </li>
-        <li class="feedback-list__items feedback-list__itemes--impression">
+        <li class="feedback-list__items feedback-list__itemes--attraction">
           <input type="checkbox"  name="checkbox" class="visually-hidden radio-input" id="checkbox4">
           <label class="feedback-list__itemes-heading checkbox" for="checkbox4">Красные скалы</label>
         </li>
@@ -126,7 +137,19 @@
         </h2>
       </div>
     </div>
+    <div class="popup popup--failure visually-hidden">
+      <h2 class="popup__heading popup__heading--failure">Что-то пошло не так!</h2>
+      <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button popup__button popup__button--failure">ОК</button>
+    </div>
+    <div class="popup popup--success visually-hidden">
+      <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup__grey-block"><button class="button popup__button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
+</div>
 </main>
 <footer class="page-footer">
   <span class="page-footer__tag page-footer__tag--padding">#VISITSEDONA</span>
