@@ -7,8 +7,9 @@
 /* описание блока welcome с модификацией на внутренние страницы*/
 
 .welcome {
-  background-image: url("../img/back-mobile.svg");
+  background-image: url("../img/back-desktop-iteme768.svg");
   background-color: @theme-color;
+  background-size: cover;
   text-align: center;
   height: 389px;
   width: 100%;
@@ -48,6 +49,8 @@
 .sedona {
   background-image: url("../img/back-desktop-iteme.svg");
   background-color: @theme-color;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   height: 214px;
   width: 100%;
@@ -70,7 +73,8 @@
 @media screen and (min-width: 768px) {
   .welcome {
     background-image: url("../img/back-desktop768.svg");
-    width: 768px;
+    min-width: 768px;
+    width: 100%;
     height: 518px;
   }
 }
@@ -171,17 +175,17 @@
 }
 
 .advantages__text--hotel {
-  width: 216px;
+  min-width: 216px;
   text-align: left;
 }
 
 .advantages__text--food {
-  width: 232px;
+  min-width: 232px;
   text-align: left;
 }
 
 .advantages__text--suvenir {
-  width: 202px;
+  min-width: 202px;
 }
 
 .advantages__nowrap {
@@ -189,23 +193,23 @@
 }
 
 .reason__text--width {
-  width: 240px;
+  min-width: 240px;
 }
 
 .reason__text--width-3 {
-  width: 268px;
+  min-width: 268px;
 }
 
 .reason__text--width-4 {
-  width: 230px;
+  min-width: 230px;
 }
 
 .reason__text--width-5 {
-  width: 255px;
+  min-width: 255px;
 }
 
 .reason__text--slim {
-  width: 289px;
+  min-width: 289px;
 }
 
 .video__title,
@@ -449,7 +453,9 @@
 /* блок - index - описание 5 причин */
 
 .reason {
-  width: 320px;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
 }
 
 .main__reason {
@@ -459,13 +465,17 @@
 .reason__item-wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .advantages {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .reason__list {
@@ -479,7 +489,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   line-height: 21px;
   height: 256px;
   box-sizing: border-box;
@@ -534,13 +545,15 @@
 .reason__picture {
   display: flex;
   align-items: center;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 800px;
   height: 256px;
   overflow: hidden;
 }
 
 .photo {
-  width: 100%;
+  width: inherit;
   height: auto;
 }
 
@@ -589,15 +602,10 @@
   border-bottom: 1px solid #d6d6d6;
   flex-direction: column;
   height: 168px;
+  align-items: center;
 }
 
 /* медиазапросы для - index - описание 5 причин */
-
-@media screen and (min-width: 768px) {
-  .main__reason {
-    width: @tablet-size;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .main__reason {
@@ -607,7 +615,6 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
-    width: @tablet-size;
     display: flex;
     flex-direction: row;
   }
@@ -633,7 +640,7 @@
 
 @media screen and (min-width: 768px) {
   .reason__item {
-    width: 256px;
+    width: 516px;
   }
 }
 
@@ -650,15 +657,11 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-  .reason__picture {
-    width: 516px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .reason__picture {
     width: 800px;
+    height: 256px;
   }
 }
 
@@ -827,7 +830,7 @@
   padding-top: 25px;
 }
 
-.gallerym__img {
+.gallery__img {
   background-position: center;
   background-repeat: no-repeat;
   height: 400px;
@@ -1045,6 +1048,12 @@
 @media (min-width: 1200px) {
   .gallery__block--items3 {
     width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery__img {
+    height: 267px;
   }
 }
 
