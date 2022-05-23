@@ -2,9 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff"><!-- 32×32 -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona - главная страница</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
 </head>
 <body>
 <div class="wrapper">
@@ -55,13 +74,14 @@
           там течет своя жизнь
         </p>
         </div>
-        <div class="reason__item reason__picture">
-        <picture class="photo">
+        <div class="reason__picture">
+        <picture class="reason-photo">
           <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/main-city-mobile@1x.webp, img/main-city-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x"><img class="photo" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="">
+          <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
+          <img class="reason-photo" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x"  alt="Седона - гродок">
         </picture>
       </div>
       </div>
@@ -91,13 +111,14 @@
         </li>
       </ul>
       <div class="reason__item-wrapper reason__item-wrapper--colored">
-        <div class="reason__item reason__picture  reason__picture--avil">
-          <picture class="photo">
+        <div class="reason__picture  reason__picture--avil">
+          <picture class="reason-photo">
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp, img/main-bridge-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x"><img class="photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
+            <img class="reason-photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="">
           </picture>
         </div>
           <div class="reason__item reason__item--avil">
