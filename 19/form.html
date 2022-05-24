@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#ffffff"><!-- 32×32 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sedona - главная страница</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Arial-BoldMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ArialMT.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preload" href="css/style.min.css" as="style" crossorigin="anonymous">
+  <base href="https://htmlacademy-adaptive.github.io/1676195-sedona-25/19/">
+</head>
+<body>
+  <div class="wrapper">
+<header class="header">
+  <a class="header__logo" href="index.html">
+    <picture>
+      <source media="(min-width: 1200px)" srcset="img/header_logo.png">
+      <source media="(min-width: 768px)" srcset="img/header_logo.png">
+      <img class="header__logo-image" src="img/header_logo.png" width="185" height="96" alt="лого Седона">
+    </picture>
+  </a>
+  <a class="nav__button" href="index.html"></a>
+  <nav class="header_nav">
+    <ul class="nav__list  nav__list--hidden">
+      <li class="nav__item ">
+        <a class="nav__link" href="../index.html">Главная</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="catalog.html">Фото и видео</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link nav__link--active">Форма отзыва</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="https://htmlacademy.ru/">HTML academy</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <main class="main">
+    <section class="sedona main__sedona">
+      <h1 class="visually-hidden">Сайт Sedona</h1>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/sedona.svg">
+        <source media="(min-width: 768px)" srcset="img/sedona.svg">
+        <img class="sedona__slogan sedona__slogan--indent" src="img/sedona.svg" width="229" height="39" alt="лого Седона">
+      </picture>
+    </section>
+  <h1 class="visually-hidden">Сайт Sedona</h1>
+  <div class="main__description">
+    <h2 class="main__title main__title--indent">Оставьте свой отзыв</h2>
+    <p class="main__text">помогите нашим отелям стать лучше! Оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
+  </div>
+  <div class="feedback feedback--indent">
+    <div class="feedback__block feedback__block--name">
+      <h2 class="feedback__title">
+        представьтесь:
+      </h2>
+      <ul class="list feedback__list">
+        <li class="list__items">
+          <label class="itemes__name">Имя*:</label>
+          <input type="text" class="itemes__text" placeholder="Петр" required="">
+        </li>
+        <li class="list__items">
+          <label class="itemes__name">Фамилия*:</label>
+          <input type="text" class="itemes__text" placeholder="Пустота" required="">
+        </li>
+        <li class="list__items">
+          <label class="itemes__name">Отчество*:</label>
+          <input type="text" class="itemes__text" placeholder="Викторович" required="">
+        </li>
+      </ul>
+    </div>
+    <div class="feedback__block feedback__block--contact">
+      <h2 class="feedback__title ">
+        контактная информация:
+      </h2>
+      <ul class="list feedback__list">
+        <li class="list__items">
+          <label class="itemes__name">Контактный телефон*:</label>
+          <input type="text" class="itemes__text list__itemes--phone" placeholder="Введите телефон" required="">
+        </li>
+        <li class="list__items">
+          <label class="itemes__name">Электронная почта*:</label>
+          <input type="text" class="itemes__text list__itemes--mail" placeholder="Введите e-mail" required="">
+        </li>
+      </ul>
+    </div>
+    <div class="feedback__block feedback__block--impression">
+      <h2 class="feedback__title feedback__title--strike feedback__title--ident">
+        ваше общее впечатление:
+      </h2>
+      <ul class="list feedback__list feedback__list--row">
+        <li class="list__items list__itemes--impression">
+          <input type="radio" checked="true" name="radio" class="visually-hidden radio-input" id="radio1">
+          <label class="list__heading radio" for="radio1">Скорее положительные</label>
+        </li>
+        <li class="list__items list__itemes--impression">
+          <input type="radio" name="radio" class="visually-hidden radio-input" id="radio2">
+          <label class="list__heading radio" for="radio2">Скорее отрицательные</label>
+        </li>
+        <li class="list__items list__itemes--impression">
+          <input type="radio"  name="radio" class="visually-hidden radio-input" id="radio3">
+          <label class="list__heading radio" for="radio3">Затрудняюсь ответить</label>
+        </li>
+      </ul>
+    </div>
+    <div class="feedback__block  feedback__block--attraction">
+      <h2 class="feedback__title  feedback__title--strike feedback__title--ident">
+        Посещенные<br> достопримечательности
+      </h2>
+      <ul class="list feedback__list feedback__list--row">
+        <li class="list__items list__itemes--attraction">
+          <input type="checkbox" checked="true" name="" class="visually-hidden radio-input" id="checkbox1">
+          <label class="list__heading checkbox" for="checkbox1">Мост Дьявола</label>
+        </li>
+        <li class="list__items list__itemes--attraction">
+          <input type="checkbox" checked="true" name="checkbox" class="visually-hidden radio-input" id="checkbox2">
+          <label class="list__heading checkbox" for="checkbox2">Гора-Колокол</label>
+        </li>
+        <li class="list__items list__itemes--attraction">
+          <input type="checkbox" checked="true" name="checkbox" class="visually-hidden radio-input" id="checkbox3">
+          <label class="list__heading checkbox" for="checkbox3">Слайд-парк</label>
+        </li>
+        <li class="list__items list__itemes--attraction">
+          <input type="checkbox"  name="checkbox" class="visually-hidden radio-input" id="checkbox4">
+          <label class="list__heading checkbox" for="checkbox4">Красные скалы</label>
+        </li>
+      </ul>
+    </div>
+    <div class="feedback__block feedback__block--emotion">
+      <h2 class="feedback__title">
+        Опишите свои эмоции
+      </h2>
+      <textarea placeholder="Опишите подробно все свои восторги" class="feedback__filds"></textarea>
+      <div class="feedback__block--sending feedback-sending--indent">
+        <a href="hotels.html" class="button feedback__button">Найти гостиницу</a>
+        <h2 class="feedback__required-text">
+          * — обязательные поля
+        </h2>
+      </div>
+    </div>
+    <div class="popup popup--failure visually-hidden">
+      <h2 class="popup__heading popup__heading--failure">Что-то пошло не так!</h2>
+      <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button popup__button popup__button--failure">ОК</button>
+    </div>
+    <div class="popup popup--success visually-hidden">
+      <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="popup__grey-block"><button class="button popup__button">Закрыть окно</button>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer class="footer">
+  <span class="footer__tag footer__tag--padding">#VISITSEDONA</span>
+  <ul class="footer page-footer_list">
+    <li><a href="" class="footer__button footer__button-VK"></a></li>
+    <li><a href="" class="footer__button footer__button-Tl"></a></li>
+    <li><a href="" class="footer__button footer__button-yt"></a></li>
+  </ul>
+  <div class="footer__developer footer__developer--padding">
+    <span class="page-footer__text">Разработано</span>
+    <a href="https://htmlacademy.ru/">
+      <img class="footer__academylogo" src="img/htmlacademy.svg" width="24" height="29" alt="лого HTML academy">
+    </a>
+  </div>
+
+</footer>
+</div>
+</body>
+</html>
