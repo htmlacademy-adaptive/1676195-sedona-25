@@ -1,0 +1,103 @@
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.list__items {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.list__impression {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: row;
+  width: 280px;
+}
+
+.list__attraction {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: row;
+  width: 280px;
+}
+
+.list__name {
+  font-size: 14px;
+  margin-right: 15px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+.list__text {
+  border: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #f2f2f2;
+  min-width: 280px;
+  width: 90%;
+  max-width: 648px;
+  height: 58px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.list__text:hover {
+  background-color: #e5e5e5;
+}
+
+.list__text:active {
+  background-color: #ffffff;
+}
+
+.list__mail {
+  background-image: url("../../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.list__phone {
+  background-image: url("../../img/phone.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.list__heading {
+  font-size: 18px;
+  font-weight: 700;
+  height: 80px;
+}
+
+/*  медиазапросы */
+@media screen and (min-width: 768px) {
+  .list__attraction {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list__attraction {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list__impression {
+    width: 33%;
+  }
+}
+
+@media (min-width: 768px) {
+  .list__text {
+    min-width: 280px;
+    max-width: 430px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list__text {
+    width: 430px;
+  }
+}
