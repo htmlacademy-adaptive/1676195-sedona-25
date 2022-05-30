@@ -1,0 +1,53 @@
+.main {
+  font-family: @main-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__title {
+  font-family: @main-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.main__title--indent {
+  padding-top: 19px;
+}
+
+.main__text {
+  padding-top: 19px;
+  padding-right: 4px;
+}
+
+.main__text--indent {
+  padding-bottom: 45px;
+}
+
+.main__description {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .main__description {
+      padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__title--indent {
+    padding-top: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main__title {
+    font-size: 21px;
+  }
+}

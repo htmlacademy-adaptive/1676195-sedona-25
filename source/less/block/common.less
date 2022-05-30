@@ -1,0 +1,48 @@
+.text {
+  font-family: @main-font;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.description {
+  width: 272px;
+}
+
+.description-heading {
+  font-family: @main-font;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  width: 150px;
+}
+
+.button {
+  text-transform: uppercase;
+  border: none;
+  box-sizing: border-box;
+  min-height: 58px;
+}
+
+.button:hover {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: var(--basik-grey-substrate);
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    width: 495px;
+  }
+}

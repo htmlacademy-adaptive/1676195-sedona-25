@@ -1,0 +1,132 @@
+.popup {
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup--failure {
+  width: 320px;
+  height: 280px;
+}
+
+.popup--success {
+  width: 320px;
+  height: 323px;
+}
+
+.popup__heading {
+  color: #000000;
+  font-family: @main-font;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.popup__heading--failure {
+  line-height: 40px;
+  max-width: 250px;
+  margin-top: 52px;
+}
+
+.popup__text {
+  color: #000000;
+  font-family: @main-font;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  max-width: 414px;
+  text-align: center;
+  line-height: 24px;
+  margin: 0;
+}
+
+.popup__text--failure {
+  max-width: 237px;
+}
+
+.popup__grey-block {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__button {
+  background-color: @theme-color;
+  color: @light-theme;
+  font: @main-font;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 58px;
+  min-width: 280px;
+  width: 100%;
+  max-width: 458px;
+}
+
+.popup__button--failure {
+  margin-bottom: 49px;
+  padding: 16px 0;
+  width: 180px;
+}
+
+@media screen and (min-width: 768px) {
+  .popup__button--failure {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popup__text--failure {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popup__button {
+    height: 58px;
+    width: 458px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup--failure {
+    width: 400px;
+    height: 347px;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup--success {
+    width: 640px;
+    height: 347px;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__grey-block {
+    width: 100%;
+    height: 146px;
+  }
+}

@@ -1,0 +1,133 @@
+.card {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  min-width: 280px;
+  width: 100%;
+  height: 121px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card--indent {
+  padding-bottom: 24px;
+}
+
+.card__author,
+.card__heading {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  margin: 20px 0 0;
+  color: #000000;
+}
+
+.card__heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: column;
+  width: 209px;
+  height: 74px;
+}
+
+.card__views-number {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-left: 31px;
+  color: #000000;
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.card__views {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-top: 9px;
+  width: 64px;
+  height: 20px;
+  margin-right: 20px;
+  background-image: url("../../img/like-icon-gr.svg");
+  background-repeat: no-repeat;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .gallery__card {
+    background-color: #f2f2f2;
+    color: #000000;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery__card {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .card--indent {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__author,
+  .card__heading {
+    color: #000000;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__author,
+  .card__heading {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__author,
+  .card__heading {
+    margin: 15px 15px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__author {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__views {
+    align-self: center;
+    background-image: url("../../img/like-icon.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .card__views-number {
+    color: #000000;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__views-number {
+    color: @light-theme;
+  }
+}

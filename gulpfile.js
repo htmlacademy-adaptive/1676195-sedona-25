@@ -72,13 +72,14 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
-  gulp.src(['source/img/*.svg', '!source/img/sprite-icons/*.{svg, png}'])
+const svg = () => {
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg', '!source/img/sprite.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
+}
 
 const sprite = () => {
-  return gulp.src('source/img/sprite-icons/*.svg')
+  return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
       inlineSvg: true
@@ -130,9 +131,10 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less//*.less', gulp.series(styles));
-  gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html', gulp.series(html, reload));
+  // gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/js/script.js', gulp.series(scripts));
 }
 
 // Build
